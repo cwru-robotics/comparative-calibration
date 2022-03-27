@@ -1,2 +1,4 @@
 data_*
 raw_data_cwru/*.png
+raw_data_ind/*.png
+!raw_data_ind/flatblack.png
