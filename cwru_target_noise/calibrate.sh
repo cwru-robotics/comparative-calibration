@@ -1,4 +1,4 @@
-for s in $( seq 0.9 0.01 1.10 )
+for s in $( seq 0.0 0.5 10.0 )
 do
 	while [ $(cat $PWD/data_$s/intrinsic_detections.csv | wc -l ) -gt 480 ]
 	do
