@@ -30,10 +30,10 @@ do
 
 	list=$(find $PWD/data_$s -type f | shuf)
 	sorted_list=$(find $PWD/data_$s -type f | sort)
-	n=200
+	n=188
 	for f in $list
 	do
-		if ! (($n % 10)) && (($n > 0)) #Calibrate every ten files blanked.
+		if ! ((($n - 8) % 10)) && (($n > 0)) #Calibrate every ten files blanked, with an offset of 18.
 		then
 			echo "s = $s, n = $n"
 			rosrun intrinsic_cal rail_ical _target_rows:=6 _target_cols:=8 _target_circle_dia:=0.03 _target_spacing:=0.0502 _target_to_rail_distance:=0.35 _num_camera_locations:=188 _camera_spacing:=0.005319149 _image_topic:=/camera/image_raw _camera_name:=camera_inaccurate _image_height:=480 _image_width:=640 _use_circle_detector:=true &

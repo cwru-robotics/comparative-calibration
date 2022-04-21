@@ -8,7 +8,7 @@ do
 	
 	echo "s = $i"
 	RANDOM=12345
-	for z in $( seq 0.35 0.005 1.35)
+	for z in $( seq 0.35 0.005319149 1.35)
 	do
 		u_one=$( echo "$RANDOM / 32767" | genius)
 		u_two=$( echo "$RANDOM / 32767" | genius)
