@@ -1,16 +1,14 @@
 # comparative-calibration
 Automated data acquisition scripts for FILL IN NAME OF PAPER HERE.
-You will need this package, the Genuis command-line calculator, roadprintz_cam_cal_tes and its dependencies, and the testing fork of ros-industrial:
+You will need this package, the Genuis command-line calculator, cal-3d and its dependencies, and the testing forks of ros-industrial and image_pipeline:
 
 ```
 cd ~/ros_ws/src
 sudo apt install genius
 git clone git@github.com:cwru-robotics/industrial_calibration.git -b indigo-devel
-git clone git@github.com:RoadPrintz/roadprintz_wobbler.git
-git clone git@github.com:RoadPrintz/roadprintz_ros_code.git
-git clone git@github.com:RoadPrintz/roadprintz_motoman_ros_i.git
-git clone git@github.com:RoadPrintz/roadprintz_cam_cal_tes.git
-git clone git@github.com:catkin/catkin_simple.git
+git clone git@github.com:ros-industrial/intelligent_actuator.git
+git clone git@github.com:cwru-robotics/image_pipeline.git
+git clone git@github.com:cwru-robotics/3d-calibration.git
 cd ..
 catkin_make
 ```
