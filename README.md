@@ -1,5 +1,5 @@
 # comparative-calibration
-Automated data acquisition scripts for FILL IN NAME OF PAPER HERE.
+Automated data acquisition scripts for `Precision Camera Calibration Using Known Target Motions Along Three Perpendicular Axes`.
 You will need this package, the Genuis command-line calculator, cal-3d and its dependencies, and the testing forks of ros-industrial and image_pipeline:
 
 ```
