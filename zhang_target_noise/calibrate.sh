@@ -44,6 +44,7 @@ do
 			wait $CAMCAL_PID
 
 			killall roscore
+			sleep 3
 		fi
 		
 		#Blanking

@@ -1,4 +1,4 @@
-for s in $( seq 0.9 0.01 1.10 )
+for s in $( seq 0.90 0.01 1.10 )
 do
 
 	RANDOM=12345
@@ -45,6 +45,7 @@ do
 			wait $CAMCAL_PID
 
 			killall roscore
+			sleep 3
 		fi
 		
 		#Blanking
