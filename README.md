@@ -20,11 +20,12 @@ Once everything is set up, you will need to acquire the initial image data that 
 ## Acquiring Initial CWRU Data
 
 ```
+# From comparative-calibration root directory...
 roslaunch intrinsic_simulation cam_launch.launch acquire_file:=$PWD/raw_data_cwru/task_description.yml
 
 roslaunch intrinsic_acquisition intrinsic_acquisition.launch path:=$PWD/raw_data_cwru/task_description.yml
 
-roslaunch dotboard_detection dots_detect.launch adf_path:=$PWD/task_description.yml csv_path:=$PWD/intrinsic_detections.csv
+roslaunch dotboard_detection dots_detect.launch adf_path:=$PWD/raw_data_cwru/task_description.yml csv_path:=$PWD/raw_data_cwru/intrinsic_detections.csv
 ```
 
 ## Acquiring initial industrial data
