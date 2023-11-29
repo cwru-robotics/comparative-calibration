@@ -47,7 +47,7 @@ roslaunch intrinsic_simulation cam_launch.launch acquire_file:=$PWD/raw_data_zha
 roslaunch intrinsic_acquisition intrinsic_acquisition.launch path:=$PWD/raw_data_zhang/task_description.yml
 
 # This version of the target detector eliminates illegible images so that the decimation step removes ten ACTUALLY USEFUL elements each run.
-roslaunch dotboard_detection dots_detect.launch adf_path:=$PWD/task_description.yml csv_path:=$PWD/intrinsic_detections.csv
+roslaunch dotboard_detection dots_detect.launch adf_path:=$PWD/raw_data_zhang/task_description.yml csv_path:=$PWD/raw_data_zhang/intrinsic_detections.csv
 ```
 
 # Generating comparative data
