@@ -31,6 +31,7 @@ roslaunch dotboard_detection dots_detect.launch adf_path:=$PWD/raw_data_cwru/tas
 ## Acquiring initial industrial data
 
 ```
+# From comparative-calibration root directory...
 roslaunch intrinsic_simulation cam_launch.launch acquire_file:=$PWD/raw_data_ind/task_description.yml cam_file:=$PWD/raw_data_ind/camera_headon.yml
 
 roslaunch intrinsic_acquisition intrinsic_acquisition.launch path:=$PWD/raw_data_ind/task_description.yml
@@ -40,6 +41,7 @@ roslaunch intrinsic_acquisition intrinsic_acquisition.launch path:=$PWD/raw_data
 Very similar to CWRU acquisition, but you need to have `3d-calibration` package be on branch `zhang_gen` to get the rotation. Then,
 
 ```
+# From comparative-calibration root directory...
 roslaunch intrinsic_simulation cam_launch.launch acquire_file:=$PWD/raw_data_zhang/task_description.yml
 
 roslaunch intrinsic_acquisition intrinsic_acquisition.launch path:=$PWD/raw_data_zhang/task_description.yml
