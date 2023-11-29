@@ -95,7 +95,7 @@ ind_set = csvread("DATA\zhang_scale_proc.csv");
 x_string = "Target size mis-scaling (%)";
 xlabs = {'110','108','106','104','102','100','98','96','94','92','90'};
 handle_offset = 22;
-handle_offset_2 = 1; %There seems to be no rhyme or reason to the dimensions of these..
+handle_offset_2 = 0.15; %There seems to be no rhyme or reason to the dimensions of these..
 xoffset = 2;
 cmap = [0.75 0 0; 0.75 0 0];%Not sure why this one graph won't colormap properly...
 
