@@ -1,13 +1,13 @@
 target_x: 8
 res_y: 640
 inc_sled_x: 0.01
-max_sled_x: -0.1757
+max_sled_x: -0.3757
 target_spacing: 0.0502
 target_y: 6
 target_radius: 0.015
-min_sled_x: -0.1757
-min_sled_y: -0.1288
-max_sled_y: -0.1288
+min_sled_x: -0.3757
+min_sled_y: -0.1306
+max_sled_y: -0.1306
 inc_sled_y: 0.1
 min_sled_z: 0.35
 max_sled_z: 1.35
