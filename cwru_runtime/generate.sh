@@ -1,4 +1,4 @@
-for s in $( seq 0.90 0.01 1.10 )
+for s in $( seq 1.0 0.01 1.0 )
 do
 	mkdir $PWD/data_$s
 	cp $PWD/task_description.yml $PWD/data_$s/task_description.yml

@@ -59,11 +59,11 @@ Also, be aware that some of these acquisition scripts can take a long time to ru
 I used grep to strip out all lines that don't contain important data. i.e.:
 
 ```
-grep "Read in\|RMS value\|fx =\|k1 =" cwru_scale_raw.txt > cwru_scale_proc.txt
+grep "Read in\|Elapsed" cwru_runtime.txt > cwru_runtime.csv
 
-grep "s =\|final cost\|camera_matrix data\|distortion data" ind_target_scale_raw.txt > ind_target_scale_proc.txt
+grep "s =\|Elapsed" ind_runtime.txt > ind_runtime.csv
 
-grep "s =\|n =\|D =\|P =\|RPE is" zhang_target_scale_raw.txt > zhang_target_scale_proc.csv
+grep "s =\|Elapsed" zhang_runtime.txt > zhang_runtime.csv
 ```
 
 Some additional manual find-and-replace was used to turn the resulting lines into neat columnar data. Additionally, it would be a good idea to give each data set a manual look-over to see if any weird messages happen to be included in it that will make the data difficult to parse.
