@@ -4,8 +4,8 @@ You will need this package, the Genuis command-line calculator, cal-3d and its d
 
 ```
 cd ~/ros_ws/src
-sudo apt install genius
-git clone git@github.com:cwru-robotics/industrial_calibration.git -b indigo-devel
+sudo apt install genius xdotool
+git clone git@github.com:cwru-robotics/industrial_calibration.git -b noetic-devel
 git clone git@github.com:ros-industrial/intelligent_actuator.git
 git clone git@github.com:cwru-robotics/image_pipeline.git
 git clone git@github.com:cwru-robotics/3d-calibration.git
